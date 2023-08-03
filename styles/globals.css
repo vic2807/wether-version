@@ -1,0 +1,52 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--color);
+}
+
+:root {
+  --bg-color: #fff;
+  --bg-color-0: rgba(124, 120, 135, 0.15);
+  --bg-color-1: rgb(243, 244, 247);
+
+  --color: rgb(0, 112, 243);
+  --color-1: rgb(35, 41, 49);
+  --color-2: rgb(49, 52, 59);
+}
