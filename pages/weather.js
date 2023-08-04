@@ -37,7 +37,7 @@ export default function Weather({ data }) {
   return (
     <Layout>
       <h2 style={{ textAlign: "center" }}>What's The Weather Like?</h2>
-
+    
       <div
         style={{ marginTop: "6px", display: "flex", justifyContent: "center" }}
       >
@@ -61,6 +61,9 @@ export default function Weather({ data }) {
         placeholder="blur"
         style={{ "z-index": "-1", objectFit: "cover" }}
       />
+      {/**
+        Prueba
+       */}
       <div
         style={{ marginTop: "6px", display: "flex", justifyContent: "center" }}
       >
