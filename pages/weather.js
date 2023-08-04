@@ -7,16 +7,15 @@ export default function Weather({ data }) {
   const [cityQuery, setCityQuery] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  console.log ("Test", weatherData)
+  console.log('Test ', weatherData )
+  const url = `https://wttr.in/${cityQuery}?format=j1`;
 
-  //const url = `https://wttr.in/${cityQuery}?format=j1`;
-  const url = `https://api.weatherapi.com/v1/sports.json?key=5727d276094e445abc2171520230108&q=${cityQuery}&aqi=no`
   const fetchWeather = async () => {
     setIsLoading(true);
     try {
       const res = await fetch(url);
       const data = await res.json();
-      setWeatherData(data.football);
+      setWeatherData(data);
       setIsLoading(false);
     } catch (error) {
       console.error("Error:", error);
@@ -62,7 +61,7 @@ export default function Weather({ data }) {
         placeholder="blur"
         style={{ "z-index": "-1", objectFit: "cover" }}
       />
-      {/* <div
+      <div
         style={{ marginTop: "6px", display: "flex", justifyContent: "center" }}
       >
         {weatherData ? (
@@ -82,7 +81,7 @@ export default function Weather({ data }) {
             </ul>
           </div>
         ) : null}
-      </div> */}
+      </div>
     </Layout>
   );
 }

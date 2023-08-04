@@ -8,7 +8,7 @@ export default function Layout({ children }) {
         {/* <Link className={styles.customLink} href="/">Home</Link> */}
         {/* <Link className={styles.customLink} href="/about">About</Link> */}
         {/* <Link className={styles.customLink} href="/contacts">Contacts</Link> */}
-        <Link className={styles.customLink} href="/weather">Calcula el clima</Link>
+        {/* <Link className={styles.customLink} href="/weather">Pronóstico del clima</Link> */}
       </div>
       <div className={styles.container}>
         {children}
